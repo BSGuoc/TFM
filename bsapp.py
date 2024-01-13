@@ -6,7 +6,7 @@ from os import path
 import urllib.request
 import requests
 # import tensorflow
-import load_model
+from keras.models import load_model
 # from tensorflow.keras.models import load_model
 
 modelo_local = 'modelo.h5'
