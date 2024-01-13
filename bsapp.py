@@ -2,8 +2,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-#install gdown
-##pip show gdown
+# install gdown
 from os import path
 import urllib.request
 ##install tensorflow
