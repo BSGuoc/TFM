@@ -34,7 +34,6 @@ def predecir_imagen(imagen):
     # modelo_local = 'modelo.h5'
     ## gdown.download(modelo_url, modelo_local, quiet=False)
     
-    model = response
 
 # Resto del código para la predicción...
 
