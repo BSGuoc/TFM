@@ -23,7 +23,7 @@ model = load_model(modelo_local)
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
-    model = load_model(modelo_local)
+    
     # Preprocesar la imagen
     img = imagen.resize((216, 216))
     img_array = np.array(img)
