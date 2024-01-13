@@ -7,7 +7,7 @@ import urllib.request
 import requests
 # import tensorflow
 
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
 
 
 
