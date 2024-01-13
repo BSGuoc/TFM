@@ -4,4 +4,4 @@ streamlit
 gdown
 tensorflow
 PIL
-
+requests
