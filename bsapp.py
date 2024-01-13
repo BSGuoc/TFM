@@ -6,7 +6,7 @@ from os import path
 import urllib.request
 import requests
 # import tensorflow
-import tensorflow
+
 from tensorflow.keras.models import load_model
 
 
