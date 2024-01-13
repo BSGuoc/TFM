@@ -5,7 +5,7 @@ import numpy as np
 from os import path
 import urllib.request
 import requests
-pip freeze > requirements.txt
+
 ## from keras.models import load_model
 ## from tensorflow.keras.models import load_model
 
@@ -17,7 +17,7 @@ response = requests.get(url)
 with open(modelo_local, "wb") as file:
     file.write(response.content)
     
-model = load_model(modelo_local)
+model = tf.keras.models.load_model(modelo_local)
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
