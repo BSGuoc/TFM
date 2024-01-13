@@ -7,6 +7,7 @@ import numpy as np
 import os
 from os import path
 import urllib.request
+import tensorflow
 from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
