@@ -2,8 +2,8 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-install gdown
-import gdown
+#install gdown
+#import gdown
 from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
