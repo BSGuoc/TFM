@@ -2,7 +2,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-pip install gdown
+install gdown
 import gdown
 from tensorflow.keras.models import load_model
 
