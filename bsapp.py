@@ -22,7 +22,7 @@ def predecir_imagen(imagen):
             urllib.request.urlretrieve(
             "'https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'", "model.h5"
             )
-        st.success("SDH Model have been downloaded !")```
+        st.success("SDH Model have been downloaded !")
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
     
     modelo_local = 'modelo.h5'
