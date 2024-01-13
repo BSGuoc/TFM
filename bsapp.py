@@ -5,6 +5,7 @@ import numpy as np
 from os import path
 import urllib.request
 import requests
+pip freeze > requirements.txt
 ## from keras.models import load_model
 ## from tensorflow.keras.models import load_model
 
