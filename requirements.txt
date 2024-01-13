@@ -1,11 +1,3 @@
-pandas
-plotly
-streamlit
-gdown
 tensorflow
-PIL
-requests
-load_model
+numpy
 keras
-keras.models
-pip install keras
