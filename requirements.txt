@@ -5,3 +5,4 @@ gdown
 tensorflow
 PIL
 requests
+load_model
