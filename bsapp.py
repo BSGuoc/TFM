@@ -7,7 +7,7 @@ import numpy as np
 from os import path
 import urllib.request
 ##install tensorflow
-from tensorflow.keras.models import load_model
+##from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
