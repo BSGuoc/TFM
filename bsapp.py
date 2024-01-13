@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 #install gdown
 #import gdown
-import os
 from os import path
 import urllib.request
 import tensorflow
