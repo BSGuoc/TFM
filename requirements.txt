@@ -6,3 +6,4 @@ tensorflow
 PIL
 requests
 load_model
+keras
