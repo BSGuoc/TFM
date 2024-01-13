@@ -5,7 +5,6 @@ import numpy as np
 from os import path
 import urllib.request
 import tensorflow
-import tensorflow
 # pip show tensorflow
 from tensorflow.keras.models import load_model
 
