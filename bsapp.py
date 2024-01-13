@@ -30,7 +30,7 @@ def predecir_imagen(imagen):
        #     )
         
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
-     model=load_model(modelo_local)
+    model=load_model(modelo_local)
     # modelo_local = 'modelo.h5'
     ## gdown.download(modelo_url, modelo_local, quiet=False)
     
