@@ -8,7 +8,7 @@ import urllib.request
 import tensorflow
 # pip show tensorflow
 from tensorflow.keras.models import load_model
-
+import request
 
 
 modelo_local = 'modelo.h5'
