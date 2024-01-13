@@ -13,19 +13,16 @@ import urllib.request
 def predecir_imagen(imagen):
     # Cargar el modelo
     # modelo_url='https://drive.google.com/file/d/18FQPSeb4N9yDh0FqZfPfz7UpsZH74eEC/view?usp=sharing'
-    
-    if path.exists("model.h5"):
-        st.success("SDH Model ready to use !")
-        pass
-    else:
-        with st.spinner("Please wait we are downloading the SDH Model."):
+    modelo_local = 'modelo.h5'
+    if not os.path.exists(modelo_local):
+        with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
             urllib.request.urlretrieve(
             "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5", "model.h5"
             )
-        st.success("SDH Model have been downloaded !")
+        st.success("El modelo se ha descargado!")
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
     
-    modelo_local = 'modelo.h5'
+    # modelo_local = 'modelo.h5'
     #gdown.download(modelo_url, modelo_local, quiet=False)
     model = load_model(modelo_local)
 
