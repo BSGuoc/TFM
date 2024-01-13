@@ -9,4 +9,5 @@ Pillow==9.4.0
 pyngrok==5.2.1
 seaborn==0.11.2
 streamlit==1.10.0
+keras==3.0.0
 ```
