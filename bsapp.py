@@ -20,6 +20,7 @@ response = requests.get(url)
 with open(modelo_local, "wb") as file:
     file.write(response.content)
 model = load_model(modelo_local)
+
 # Función para realizar la predicción
 def predecir_imagen(imagen):
     # Cargar el modelo
