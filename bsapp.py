@@ -1,11 +1,12 @@
 import streamlit as st
 import tensorflow as tf
 from tensorflow import keras
+import requests
 import numpy as np
 from PIL import Image
 from os import path
 import urllib.request
-import requests
+
 
 ## from keras.models import load_model
 ## from tensorflow.keras.models import load_model
