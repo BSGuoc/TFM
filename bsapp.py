@@ -29,8 +29,8 @@ def predecir_imagen(imagen):
     # response = requests.get(url)
    
 
-    #with open("modelo.h5", "wb") as file:
-        #file.write(response.content)
+    # with open("modelo.h5", "wb") as file:
+        # file.write(response.content)
    # if not os.path.exists(modelo_local):
     #    with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
      #       urllib.request.urlretrieve(
