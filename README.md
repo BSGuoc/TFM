@@ -8,6 +8,6 @@ matplotlib==2.1.1
 Pillow==9.4.0
 pyngrok==5.2.1
 seaborn==0.11.2
-streamlit==1.10.0
+streamlit==2.15.0
 keras
 ```
