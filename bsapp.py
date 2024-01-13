@@ -4,16 +4,28 @@ from PIL import Image
 import numpy as np
 #install gdown
 #import gdown
+from os import path
+import urllib.request
 from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
     # Cargar el modelo
     # modelo_url='https://drive.google.com/file/d/18FQPSeb4N9yDh0FqZfPfz7UpsZH74eEC/view?usp=sharing'
-    modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
+    
+    if path.exists("model.h5"):
+        st.success("SDH Model ready to use !")
+        pass
+    else:
+        with st.spinner("Please wait we are downloading the SDH Model."):
+        urllib.request.urlretrieve(
+            "'https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'", "model.h5"
+        )
+        st.success("SDH Model have been downloaded !")```
+    # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
     
     modelo_local = 'modelo.h5'
-    gdown.download(modelo_url, modelo_local, quiet=False)
+    #gdown.download(modelo_url, modelo_local, quiet=False)
     model = load_model(modelo_local)
 
 # Resto del código para la predicción...
