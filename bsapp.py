@@ -7,7 +7,7 @@ from os import path
 import urllib.request
 import tensorflow
 # pip show tensorflow
-## from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
