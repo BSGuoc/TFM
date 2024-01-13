@@ -5,7 +5,7 @@ import numpy as np
 # install gdown
 from os import path
 import urllib.request
-## install tensorflow
+install tensorflow
 pip show tensorflow
 from tensorflow.keras.models import load_model
 
