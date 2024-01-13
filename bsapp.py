@@ -17,7 +17,7 @@ def predecir_imagen(imagen):
     if not os.path.exists(modelo_local):
         with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
             urllib.request.urlretrieve(
-            "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5", "model.h5"
+            "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5", "model.h5"
             )
         
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
