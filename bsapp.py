@@ -13,12 +13,21 @@ import urllib.request
 def predecir_imagen(imagen):
     # Cargar el modelo
     # modelo_url='https://drive.google.com/file/d/18FQPSeb4N9yDh0FqZfPfz7UpsZH74eEC/view?usp=sharing'
+    
     modelo_local = 'modelo.h5'
-    if not os.path.exists(modelo_local):
-        with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
-            urllib.request.urlretrieve(
-            "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5", "model.h5"
-            )
+    import requests
+
+    url = "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5"
+    response = requests.get(url)
+
+    with open("model.h5", "wb") as file:
+        file.write(response.content)
+
+   # if not os.path.exists(modelo_local):
+    #    with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
+     #       urllib.request.urlretrieve(
+      #      "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5", "model.h5"
+       #     )
         
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
     
