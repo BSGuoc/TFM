@@ -7,7 +7,7 @@ from os import path
 import urllib.request
 # install tensorflow
 # pip show tensorflow
-import tensorflow
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 # Función para realizar la predicción
