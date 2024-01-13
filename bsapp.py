@@ -23,33 +23,7 @@ model = load_model(modelo_local)
 
 # Función para realizar la predicción
 def predecir_imagen(imagen):
-    # Cargar el modelo
-    # modelo_url='https://drive.google.com/file/d/18FQPSeb4N9yDh0FqZfPfz7UpsZH74eEC/view?usp=sharing'
-    
-    # modelo_local = 'modelo.h5'
-    # import requests
-
-    # url = "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5"
-    # response = requests.get(url)
-   
-
-    # with open("modelo.h5", "wb") as file:
-        # file.write(response.content)
-   # if not os.path.exists(modelo_local):
-    #    with st.spinner("Por favor, espera mientras descargamos el modelo. Esto solo ocurrirá una vez."):
-     #       urllib.request.urlretrieve(
-      #      "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5", "model.h5"
-       #     )
-        
-    # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
-    # model=load_model(modelo_local)
-    # modelo_local = 'modelo.h5'
-    ## gdown.download(modelo_url, modelo_local, quiet=False)
-    
-
-# Resto del código para la predicción...
-
-
+    model = load_model(modelo_local)
     # Preprocesar la imagen
     img = imagen.resize((216, 216))
     img_array = np.array(img)
