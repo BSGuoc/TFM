@@ -6,7 +6,7 @@ from os import path
 import urllib.request
 import requests
 # import tensorflow
-# pip show tensorflow
+pip install tensorflow
 from tensorflow.keras.models import load_model
 
 
