@@ -33,7 +33,7 @@ def predecir_imagen(imagen):
     
     # modelo_local = 'modelo.h5'
     ## gdown.download(modelo_url, modelo_local, quiet=False)
-    #global load_model
+    # global load_model
    # model = load_model(response)
 
 # Resto del código para la predicción...
