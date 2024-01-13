@@ -1,4 +1,3 @@
-
 import streamlit as st
 from PIL import Image
 import numpy as np
@@ -8,11 +7,13 @@ import urllib.request
 import tensorflow
 # pip show tensorflow
 from tensorflow.keras.models import load_model
-import request
+
 
 
 modelo_local = 'modelo.h5'
+
 url = "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5"
+import request
 response = requests.get(url)
 with open(modelo_local, "wb") as file:
     file.write(response.content)
