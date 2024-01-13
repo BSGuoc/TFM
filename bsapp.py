@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 #install gdown
-pip show gdown
+##pip show gdown
 from os import path
 import urllib.request
 ##install tensorflow
@@ -21,7 +21,7 @@ def predecir_imagen(imagen):
     url = "https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINAL.h5"
     response = requests.get(url)
 
-    with open("model.h5", "wb") as file:
+    with open("modelo.h5", "wb") as file:
         file.write(response.content)
 
    # if not os.path.exists(modelo_local):
@@ -33,7 +33,7 @@ def predecir_imagen(imagen):
     # modelo_url='https://modelo2.s3.eu-west-3.amazonaws.com/modelo_FINALp2+(1).h5'
     
     # modelo_local = 'modelo.h5'
-    gdown.download(modelo_url, modelo_local, quiet=False)
+    ## gdown.download(modelo_url, modelo_local, quiet=False)
     model = load_model(modelo_local)
 
 # Resto del código para la predicción...
