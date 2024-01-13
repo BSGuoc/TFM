@@ -4,3 +4,5 @@ streamlit
 gdown
 tensorflow
 PIL
+tensorflow.keras.models
+load_model
